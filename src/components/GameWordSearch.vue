@@ -9,10 +9,10 @@
                 </div>
             </div>
             <div class="column has-text-centered-mobile">
-                <h3>Find words:</h3>
+                <h3>Find words:</h3><br />
                 <ul>
                     <li v-for="word in wordsArray" :class="{'done':( typeof word.letters != 'undefined' && word.letters instanceof Array )}">{{ word.word }}</li>
-                </ul>
+                </ul><br />
                 <h3>Time:</h3>
                 {{ time }} s.
             </div>
@@ -34,7 +34,7 @@
 
 <script>
 export default {
-    name: 'GameWords',    
+    name: 'GameWords',
     data: function(){
         return{
             time: 0,
@@ -46,10 +46,6 @@ export default {
         }
     },
     props: {
-        mainUrl: {
-            type: String,
-            required: true,
-        },
         words:{
             type: Array,
         },
