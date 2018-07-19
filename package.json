@@ -1,0 +1,36 @@
+{
+  "name": "vue-word-search",
+  "version": "1.0.0",
+  "description": "Simple VueJS game.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development ./node_modules/.bin/webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development ./node_modules/.bin/webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development ./node_modules/.bin/webpack-dev-server --inline --hot --port 8080 --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaligari/vue-word-search.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue",
+    "words"
+  ],
+  "author": "Sebastian Kopeć",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.5",
+    "hoek": "^5.0.3",
+    "laravel-mix": "^1.4.5",
+    "less": "^3.7.1",
+    "less-loader": "^4.1.0",
+    "webpack": "^3.6.0"
+  }
+}
